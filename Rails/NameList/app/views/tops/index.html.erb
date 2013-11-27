@@ -1,0 +1,23 @@
+<h1>Listing tops</h1>
+
+<table>
+  <tr>
+    <th>Name</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @tops.each do |top| %>
+  <tr>
+    <td><%= top.name %></td>
+    <td><%= link_to 'Show', top %></td>
+    <td><%= link_to 'Edit', edit_top_path(top) %></td>
+    <td><%= link_to 'Destroy', top, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Top', new_top_path %>
