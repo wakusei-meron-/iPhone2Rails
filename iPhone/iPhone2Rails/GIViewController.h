@@ -10,9 +10,7 @@
 #import "GITableView.h"
 
 @interface GIViewController : UIViewController<UITextFieldDelegate>
-{
-    
-}
+
 @property (strong, nonatomic) IBOutlet UITextField *txfInputName;
 @property (strong, nonatomic) IBOutlet GITableView *tableViewNameList;
 
